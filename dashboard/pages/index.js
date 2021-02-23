@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Blog() {
   return (
     <div>
-      <h3>This is our blog</h3>
+      <h3>This is our blog updated</h3>
       <div>
             Dashboard
         </div>
