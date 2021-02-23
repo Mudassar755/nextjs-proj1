@@ -14,7 +14,7 @@ export default function Home() {
       </div>
       <div>
         <Link href="/about">
-          <a>About us</a>
+          <a>About Us</a>
         </Link>
         </div>
         <div>
