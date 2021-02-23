@@ -5,6 +5,9 @@ export default function Blog() {
   return (
     <div>
       <h3>This is our blog</h3>
+      <div>
+            Dashboard
+        </div>
       <ul>
         <li>
           <Link href="/post/1">

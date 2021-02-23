@@ -4,12 +4,12 @@ module.exports = {
   rewrites() {
     return [
       {
-        source: '/blog',
-        destination: `${BLOG_URL}/logo-maker/dashboard`,
+        source: '/dashboard',
+        destination: `${BLOG_URL}/dashboard`,
       },
       {
-        source: '/blog/:path*',
-        destination: `${BLOG_URL}/blog/:path*`,
+        source: '/dashboard/:path*',
+        destination: `${BLOG_URL}/dashboard/:path*`,
       },
     ]
   },
