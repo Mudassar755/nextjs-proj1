@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
       <p>This is our homepage updated</p>
       <div>
-        <a href="/blog">Blog</a>
+        <a href="/dashboard">Dashboard</a>
       </div>
       <div>
         <Link href="/about">
