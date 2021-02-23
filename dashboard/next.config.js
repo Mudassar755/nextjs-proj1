@@ -1,3 +1,3 @@
 module.exports = {
-  basePath: '/:maker/dashboard',
+  basePath: '/:maker*/dashboard',
 }
