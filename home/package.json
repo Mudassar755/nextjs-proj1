@@ -7,9 +7,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
     "next": "latest",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-bootstrap": "^1.5.0",
+    "react-dom": "^16.13.1",
+    "react-js-pagination": "^3.0.3"
   },
   "license": "MIT"
 }

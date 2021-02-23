@@ -1,0 +1,1382 @@
+.banner {
+  background: url(/static/icons/logoMaker/banner_img.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+.bannerText {
+  padding: 3rem 0;
+  text-align: left;
+  padding-left: 1rem;
+}
+.bannerText h1,
+.bannerText h2 {
+  font-family: Nunito-Bold, sans-serif !important;
+  text-transform: capitalize;
+}
+
+.sidebarBtn {
+  display: none;
+  position: absolute;
+  top: 52px;
+  left: -5px;
+  border: none;
+  width: 60px;
+  z-index: 99;
+  background: transparent;
+  outline: 0 !important;
+}
+.sidebarBtn img {
+  width: 100%;
+  border-radius: 5px;
+}
+.openBtn {
+  display: none;
+  z-index: 99;
+}
+.closeBtn {
+  left: 216px;
+  top: 10px;
+  z-index: 101;
+  width: 50px;
+  display: none;
+}
+/* .hide {
+  display: none;
+  animation: fadeOut 500ms linear;
+  transition: visibility 500ms linear;
+}
+.show {
+  display: block;
+  animation: fadeIn 500ms linear;
+  transition: visibility 500ms linear;
+} */
+
+.sidebar {
+  padding: 0;
+  box-shadow: 0 0 20px #bfbfbf;
+  background: #fff;
+  transition: 0.5s;
+  display: block;
+}
+
+.sidebar h5 {
+  padding: 30px 10px 10px 30px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.categoryList {
+  padding: 0;
+  margin: 0;
+}
+.ViewMoreBtn {
+  margin-top: 32px !important;
+  background-color: rgb(255, 237, 237);
+  padding: 0.8rem;
+  color: rgb(253, 35, 35);
+  border: none;
+  width: 164px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.listItem {
+  padding: 10px;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 33px;
+  cursor: pointer;
+  overflow: hidden;
+  /* background:${props => props.bgColor}; */
+}
+.listItem:hover {
+  background: #efefef;
+}
+.listItem:active {
+  background: #efefef;
+}
+
+.listIcon {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-right: 20px;
+}
+
+.scrollBar {
+  max-height: 823px;
+}
+
+/* Templates Section */
+.templateItemCol {
+  color: black;
+  transform: translateX(0px) translateY(0px);
+  -webkit-transform: translateX(0px) translateY(0px);
+  -moz-transform: translateX(0px) translateY(0px);
+  -ms-transform: translateX(0px) translateY(0px);
+  -o-transform: translateX(0px) translateY(0px);
+}
+.templateItemCol:hover,
+.templateItemCol a:hover {
+  color: #e2373f;
+  transform: translateX(0px) translateY(-10px);
+  -webkit-transform: translateX(0px) translateY(-10px);
+  -moz-transform: translateX(0px) translateY(-10px);
+  -ms-transform: translateX(0px) translateY(-10px);
+  -o-transform: translateX(0px) translateY(-10px);
+  text-decoration: none;
+}
+.templateItem {
+  position: relative;
+  margin-bottom: 15px;
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+.logoTempItems {
+  position: relative;
+  margin-bottom: 15px;
+  /* border: 1px solid #707070; */
+  cursor: pointer;
+}
+.logoTempItems img {
+  border-radius: 10px;
+}
+.templateItem:hover .templateOverlay {
+  opacity: 1;
+  transition: 0.5s;
+}
+.logoTempItems:hover .templateOverlay {
+  opacity: 1;
+  transition: 0.5s;
+}
+.templateItem img {
+  width: 100%;
+  height: auto;
+}
+.templateItemText {
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Milliard-SemiBold" !important;
+}
+.templateItemTextCat {
+  cursor: pointer;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+.templateOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.templateBtns {
+  position: relative;
+  top: calc(50% - 50px);
+  left: 0;
+  width: 100%;
+}
+.templateBtns button {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+.templateBtns button:hover {
+  background: #e2373f !important;
+  border-color: #e2373f !important;
+}
+
+.seeAllBtn {
+  position: relative;
+  top: -2em;
+}
+.seeAllBtn a {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.seeAllBtn a button {
+  font-weight: 700;
+}
+
+/* Design Steps */
+.designStepsContainer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 2em 0 0.5em 0;
+  position: relative;
+  margin-bottom: 1em;
+}
+.designStepsContainer h2 {
+  font-family: Nunito-Bold, sans-serif !important;
+  text-transform: capitalize;
+}
+
+.designStep {
+  /* margin-bottom:${props => props.m_bottom}; */
+  padding-bottom: 1em;
+  margin-top: 2em;
+}
+
+.designStepImg img {
+  width: 80px;
+}
+.designStepContent {
+  text-align: left;
+  padding-left: 2em;
+}
+.designStepContent h3 {
+  font-family: Nunito-Bold, sans-serif !important;
+  text-transform: capitalize;
+}
+
+.stepsNumbring {
+  position: absolute;
+  left: calc(50% - 146px);
+  top: calc(50% - 313px);
+  height: 640px;
+}
+.stepsNumbring img {
+  height: 100%;
+}
+
+/* Video Section */
+.videoSection {
+  width: 800px;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.videoContainer {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.videoContainer iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* LogoMaker Features */
+.logoFeatureCard {
+  align-items: left;
+  background-color: #f5f5f5;
+  padding: 20px 9px;
+  height: 100%;
+}
+
+.sectionOne {
+  background: url(/static/icons/logoMaker/illustration_1.svg) no-repeat center;
+}
+.sectionTwo {
+  background: url(/static/icons/logoMaker/illustration_2.svg) no-repeat center;
+}
+.contentSection {
+  background-size: 25% 100%;
+  width: 100%;
+  /* // height: 400px;
+// margin-top:100px; */
+  padding-top: 3em;
+  margin-bottom: 2em;
+}
+.contentSection h2 {
+  font-family: Nunito-Bold, sans-serif !important;
+  text-transform: capitalize;
+}
+
+/* MAX-WIDTH Queries */
+@media (max-width: 767px) {
+  .openBtn {
+    top: 135px;
+  }
+  .seeAllBtn a button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .logoFeatureCard {
+    margin-bottom: 10px;
+  }
+  .contentSection {
+    padding-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 769px) {
+  .designStep {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 270px;
+  }
+  .hide {
+    animation: fadeOut 500ms linear;
+    transition: visibility 500ms linear;
+    display: none;
+  }
+  .show {
+    display: block;
+    animation: fadeIn 500ms linear;
+    transition: visibility 500ms linear;
+  }
+  .designStepImg {
+    padding-top: 1em;
+    margin-bottom: 1em;
+  }
+  .designStepImg img {
+    width: 5em;
+  }
+  .designStepContent {
+    text-align: center;
+  }
+  .stepsNumbring {
+    display: none;
+  }
+}
+
+/* MIN-WIDTH Queries */
+
+@media screen and (min-width: 992px) {
+  .logoFeatures {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+@media screen and (min-width: 1367px) {
+  .scrollBar {
+    max-height: 1140px;
+  }
+}
+/* Animations */
+@keyframes fadeOut {
+  from {
+    transform: scale(0.25);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    transform: scale(0.25);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.useCard {
+  padding: 12px 20px;
+  background: black;
+  color: white;
+  border-radius: 50% 50%;
+  position: relative;
+  top: 50%;
+}
+.useCardPara {
+  position: absolute;
+  width: 80%;
+  left: 23%;
+  font-size: 14px;
+  font-family: "Montserrat-Medium" !important;
+}
+.useCardPara2 {
+  position: absolute;
+  /* width: 80%; */
+  left: 23%;
+  top: 35%;
+  font-size: 14px;
+  font-family: "Montserrat-Medium" !important;
+}
+.FlyrTopImg {
+  margin-top: 0%;
+  /* background: url(/static/icons/flyer/flyer-bck.svg);
+  background-position: right 55% bottom 80%;
+  background-size: 55%;
+  background-repeat: no-repeat; */
+}
+.FlyrTopImg2 {
+  margin-top: 0%;
+  background: url(/static/icons/flyer/flyer-bck.svg);
+  background-position: right 55% bottom 80%;
+  background-size: 55%;
+  background-repeat: no-repeat;
+}
+.FlyrMakerImg {
+  width: 130%;
+}
+.searchBoxTmpCat {
+  background: red;
+}
+.FlyerCardFirst {
+  /* width: 28rem; */
+  height: 130px;
+  box-shadow: 0px 9px 20px #eee;
+  border: #f5f5f5;
+}
+.FlyerCardRest {
+  /* width: 28rem; */
+  border: none;
+  height: 130px;
+  background: transparent;
+}
+.FlyrLastCardSec {
+  margin-top: 8%;
+  padding-left: 8%;
+}
+.FlyrSearchBottom {
+  padding-top: 4%;
+}
+.FlyrTopText h1 {
+  font-size: 35px;
+  font-family: "Milliard-Bold" !important;
+}
+.FlyrTopText p {
+  font-size: 14px;
+  font-family: "Montserrat-Regular" !important;
+}
+.FlyrTopTextCat h1 {
+  font-size: 35px;
+  font-family: "Milliard-Bold" !important;
+}
+.FlyrTopTextCat p {
+  font-size: 14px;
+  font-family: "Milliard-Book" !important;
+}
+.FlyrSearchBottom h2 {
+  font-size: 28px;
+  font-family: "Milliard-Bold" !important;
+}
+.FlyrSearchBottom p {
+  font-size: 14px;
+  font-family: "Montserrat-Regular" !important;
+}
+.FlyrCatEvemt {
+  padding-bottom: 3%;
+  padding-top: 6%;
+}
+.FlyrCatEvemt h2 {
+  font-size: 28px;
+  font-family: "Milliard-Bold" !important;
+}
+.FlyrCatEvemt p {
+  font-size: 14px;
+  font-family: "Milliard-Book" !important;
+}
+.FlyrCatIndustry h2 {
+  font-size: 28px;
+  font-family: "Milliard-Bold" !important;
+}
+.FlyrCatIndustry p {
+  font-size: 14px;
+  font-family: "Milliard-Book" !important;
+}
+.FlyerCategoryListSty {
+}
+.FlyrCatgoerySpan {
+  display: inline-block;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  width: 120px;
+  height: 46px;
+  background-image: -moz-linear-gradient(
+    bottom,
+    #d8d9db 0%,
+    #fff 80%,
+    #fdfdfd 100%
+  );
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  border: none;
+  margin: 1%;
+  color: black;
+  font-family: "Montserrat-Medium" !important;
+  font-size: 14px;
+}
+.FlyrCatgoerySpan:hover {
+  border-radius: 0px;
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  background-color: #dd1956 !important;
+  transition: 0.5s;
+}
+
+.FlyrCatgoerySpan:active {
+  color: black;
+}
+.FlyrCatgoerySpan:focus {
+  outline: none;
+  color: black;
+}
+.FlyrTopOverlap {
+  margin-top: -2.8em;
+  background: white;
+  padding-bottom: 3%;
+}
+.FlyrCatIndustry {
+  padding-top: 6%;
+}
+.logoUsePoints {
+  /* padding-top: 5%; */
+  padding-bottom: 3%;
+  background: url(/static/icons/logo/line.svg) no-repeat center;
+  background-position: left 120px bottom 90px;
+  background-size: 65% 90%;
+}
+.LogoDigitFirst {
+  padding: 12px 20px;
+  background: black;
+  color: white;
+  border-radius: 50% 50%;
+}
+.logoCardsLayout {
+  background: transparent;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+.logoCardsLayoutMobile {
+  /*background: transparent;
+  */
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+.LogoCatgoerySpan {
+  display: inline-block;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  height: 46px;
+  background-image: -moz-linear-gradient(
+    bottom,
+    #d8d9db 0%,
+    #fff 80%,
+    #fdfdfd 100%
+  );
+  border-radius: 8px;
+  border: none;
+  margin: 1%;
+  color: black;
+  font-family: "NunitoSans-Bold";
+  font-size: 14px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.LogoCatgoerySpan:hover {
+  color: black !important;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.LogoCatgoerySpan:focus {
+  color: black !important;
+}
+.LogoPagNum a {
+  background: #f0f0f0;
+  width: 40px;
+  height: 40px;
+}
+.LogoPagNum span {
+  background: #f0f0f0;
+  width: 40px;
+  height: 40px;
+}
+.LogoPagPrev {
+  margin-right: 16px;
+}
+.LogoPagNext {
+  margin-left: 16px;
+}
+.LogoPagNext a {
+  background: #f0f0f0;
+  width: 40px;
+  height: 40px;
+  color: black;
+}
+.LogoPagPrev a {
+  background: #f0f0f0;
+  width: 40px;
+  height: 40px;
+  color: black;
+}
+.LogoPagination ul {
+  justify-content: center;
+}
+.LogoPagination ul li {
+  width: 38px;
+  height: 38px;
+  background-color: #f0f0f0;
+  padding-top: 1%;
+  font-weight: 500;
+}
+.LogoPagination ul li a {
+  width: 20px;
+  height: 20px;
+}
+
+.LogoPagination ul li:nth-child(1) {
+  margin-right: 8px;
+}
+/* .LogoPagination ul li:nth-child(2) {
+  width: 60px;
+  padding-left: 30px;
+} */
+
+.LogoPagination ul li:nth-last-child(1) {
+  margin-left: 8px;
+}
+.LogoTopTextCat h1 {
+  /* font-size: 35px; */
+  font-family: "NunitoSans-ExtraBold";
+}
+.LogoTopTextCat h2 {
+  /* font-size: 30px; */
+  font-family: "NunitoSans-ExtraBold";
+}
+.LogoTopTextCat p {
+  font-size: 16px;
+  font-family: "NunitoSans-Regular";
+}
+.LogoTopTextCatMob p {
+  font-size: 16px;
+  font-family: "NunitoSans-Regular";
+  display: none;
+}
+.logoUsePointsCol h2 {
+  font-size: 18px;
+  font-family: "NunitoSans-Bold";
+}
+.logoUsePointsCol h3 {
+  font-size: 18px;
+  font-family: "NunitoSans-Bold";
+}
+.logoUsePointsCol p {
+  font-size: 16px;
+  font-family: "NunitoSans-Regular";
+}
+.logoCardsLayoutTitle h3 {
+  font-size: 18px;
+  font-family: "NunitoSans-Bold";
+}
+.logoCardsLayoutText p {
+  font-size: 16px;
+  font-family: "NunitoSans-Regular";
+}
+.logoCategoriesContainer {
+  font-size: 16px;
+  font-family: "NunitoSans-Bold";
+  cursor: pointer;
+}
+.logoCategoriesContainer:hover {
+  transform: scale(1.1);
+  color: #fd0000;
+  text-decoration: none;
+}
+.logoCategoriesList {
+  height: 150px;
+  width: 150px;
+  font-family: "NunitoSans-Bold";
+  cursor: pointer;
+  border-radius: 16px;
+}
+.logoCategoriesList img {
+  margin-left: 25%;
+}
+.logoCategoryCardMob {
+  /*width: 16%;
+  */
+  height: auto;
+  background-color: white;
+  border-radius: 6%;
+  position: relative;
+  display: block;
+  -webkit-border-radius: 6%;
+  -moz-border-radius: 6%;
+  -ms-border-radius: 6%;
+  -o-border-radius: 6%;
+}
+.logoCatCardFirstSec {
+  /* width: 90%; */
+}
+.logoCategoryCard {
+  /* width: 16%; */
+  height: auto;
+  background-color: white;
+  border-radius: 6%;
+  position: relative;
+}
+.logoCatCardFirst {
+  padding-top: -19px;
+  font-size: 14px;
+  font-family: "NunitoSans-Regular";
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: -22%;
+}
+.logoCatCardImg1 {
+  padding-top: 5%;
+  padding-left: 2%;
+}
+.logoCatCardImg2 {
+  padding-right: 2%;
+  margin-top: -18%;
+  float: right;
+  padding-bottom: 28%;
+}
+.logoCatCardFooterImg {
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  /* margin-top: 6%; */
+}
+.logoCatCardFooter {
+  margin-left: 80px;
+  margin-top: -70px;
+}
+.logoCatCardFooter p {
+  font-size: 13px;
+  font-family: "NunitoSans-Regular";
+}
+.logoCatCardFooter img {
+  width: 8%;
+  margin-top: -40px;
+}
+.logoCatCardFooter span {
+  font-size: 14px;
+  font-family: "NunitoSans-Regular";
+}
+.logCatBottomSec {
+  /* position: absolute;
+  bottom: 0; */
+}
+.LogoCatTopText h1 {
+  font-size: 35px;
+  font-family: "NunitoSans-ExtraBold";
+}
+.LogoCatTopText p {
+  font-size: 14px;
+  font-family: "NunitoSans-Regular";
+}
+/* mobileXS */
+@media screen and (min-width: 280px) {
+  .logoCategoriesList {
+    height: 130px;
+    width: 130px;
+    margin-left: 16px;
+  }
+  .logoCategoriesList img {
+    margin-left: 25%;
+    padding-top: 25%;
+  }
+  .FlyrTopImg {
+    margin-top: 40%;
+  }
+  .FlyrMakerImg {
+    width: 100%;
+  }
+  .FlyerCardFirst {
+    /* width: 28rem; */
+    height: 222px;
+    box-shadow: 0px 9px 20px #eee;
+    border: #f5f5f5;
+  }
+  .FlyerCardRest {
+    /* width: 28rem; */
+    border: none;
+    height: 270px;
+    background: transparent;
+  }
+  .FlyrLastCardSec {
+    margin-top: 8%;
+    padding-left: 8%;
+    padding-bottom: 20%;
+  }
+  .useCardPara {
+    width: 65%;
+    left: 32%;
+  }
+  .useCardPara2 {
+    width: 65%;
+    left: 32%;
+  }
+  .FlyrSearchBottom {
+    padding-top: 28%;
+  }
+  .FlyrCatEvemt {
+    padding-bottom: 3%;
+    padding-top: 18%;
+  }
+  .FlyrTopOverlap {
+    margin-top: 0px;
+  }
+  .logoUsePointsCol {
+    margin-top: 10%;
+  }
+  .LogoTopTextCat {
+    margin-top: 24% !important;
+  }
+  .LogoTopTextCatMob p {
+    font-size: 16px;
+    font-family: "NunitoSans-Regular";
+    display: block;
+  }
+  .logoUsePoints {
+    /* padding-top: 5%; */
+    padding-bottom: 3%;
+    background: none;
+  }
+  .logoUseImg {
+    width: 100%;
+  }
+  .logoCategoryCardMob {
+    display: none;
+  }
+  .LogoPagination ul li {
+    padding-top: 2%;
+  }
+  .FlyrTopImg2 {
+    margin-top: 36%;
+  }
+}
+
+/* mobileS */
+@media screen and (min-width: 320px) {
+  .logoCategoriesList {
+    height: 110px;
+    width: 110px;
+    margin-left: 16px;
+  }
+  .logoCategoriesList img {
+    margin-left: 25%;
+    padding-top: 25%;
+  }
+  .logoCategoriesContainer p {
+    margin-left: 12px !important;
+  }
+  .FlyrTopImg {
+    margin-top: 40%;
+  }
+  .FlyrMakerImg {
+    width: 100%;
+  }
+  .FlyerCardFirst {
+    /* width: 28rem; */
+    height: 160px;
+    box-shadow: 0px 9px 20px #eee;
+    border: #f5f5f5;
+  }
+  .FlyerCardRest {
+    /* width: 28rem; */
+    border: none;
+    height: 110px;
+    background: transparent;
+  }
+  .FlyerCardFirst {
+    /* width: 28rem; */
+    height: 160px;
+    box-shadow: 0px 9px 20px #eee;
+    border: #f5f5f5;
+  }
+  .FlyerCardRest {
+    /* width: 28rem; */
+    border: none;
+    height: 160px;
+    background: transparent;
+  }
+  .FlyrSearchBottom {
+    padding-top: 35%;
+  }
+  .FlyrLastCardSec {
+    margin-top: 8%;
+    padding-left: 8%;
+    padding-bottom: 8%;
+  }
+  .useCardPara {
+    width: 68%;
+    left: 28%;
+  }
+  .useCardPara2 {
+    left: 28%;
+    width: 64%;
+  }
+  .FlyrCatEvemt {
+    padding-bottom: 3%;
+    padding-top: 18%;
+  }
+  .FlyrTopOverlap {
+    margin-top: 0px;
+  }
+  .logoUsePointsCol {
+    margin-top: 10%;
+  }
+  .LogoPagination ul li {
+    padding-top: 2%;
+  }
+  .FlyrTopImg2 {
+    margin-top: 25%;
+  }
+}
+@media screen and (min-width: 321px) {
+  .FlyrTopImg {
+    margin-top: 35%;
+  }
+}
+/* mobileM */
+@media screen and (min-width: 375px) {
+  .logoCategoriesList {
+    height: 130px;
+    width: 130px;
+    margin-left: 16px;
+  }
+  .logoCategoriesList img {
+    margin-left: 25%;
+  }
+  .logoCategoriesContainer p {
+    margin-left: 1.5rem !important;
+  }
+  .FlyrTopImg {
+    margin-top: 38%;
+  }
+  .FlyrMakerImg {
+    width: 100%;
+  }
+  .FlyerCardFirst {
+    /* width: 28rem; */
+    height: 140px;
+    box-shadow: 0px 9px 20px #eee;
+    border: #f5f5f5;
+  }
+  .FlyerCardRest {
+    /* width: 28rem; */
+    border: none;
+    height: 140px;
+    background: transparent;
+  }
+  .FlyrSearchBottom {
+    padding-top: 30%;
+  }
+  .FlyrLastCardSec {
+    margin-top: 8%;
+    padding-left: 8%;
+    padding-bottom: 8%;
+  }
+  .useCardPara {
+    width: 70%;
+    left: 28%;
+  }
+  .useCardPara2 {
+    left: 28%;
+    width: 64%;
+  }
+  .FlyrCatEvemt {
+    padding-bottom: 3%;
+    padding-top: 18%;
+  }
+  .FlyrTopOverlap {
+    margin-top: 0px;
+  }
+  .logoUsePointsCol {
+    margin-top: 10%;
+  }
+  .LogoPagination ul li {
+    padding-top: 2%;
+  }
+  .logoCardsMobileView {
+    /* display: block; */
+  }
+}
+@media screen and (min-width: 411px) {
+  .FlyrTopImg {
+    margin-top: 30%;
+  }
+}
+/* mobileL */
+@media screen and (min-width: 425px) {
+  .FlyrTopImg {
+    margin-top: 16%;
+  }
+  .FlyrMakerImg {
+    width: 100%;
+  }
+  .FlyerCardFirst {
+    /* width: 28rem; */
+    height: 130px;
+    box-shadow: 0px 9px 20px #eee;
+    border: #f5f5f5;
+  }
+  .FlyerCardRest {
+    /* width: 28rem; */
+    border: none;
+    height: 110px;
+    background: transparent;
+  }
+  .FlyrLastCardSec {
+    margin-top: 8%;
+    padding-left: 8%;
+    padding-bottom: 8%;
+  }
+  .useCardPara {
+    width: 70%;
+  }
+  .useCardPara2 {
+    width: 70%;
+  }
+  .FlyrCatEvemt {
+    padding-bottom: 3%;
+    padding-top: 18%;
+  }
+  .FlyrTopOverlap {
+    margin-top: 0px;
+  }
+  .logoUsePointsCol {
+    margin-top: 10%;
+  }
+  .LogoPagination ul li {
+    padding-top: 2%;
+  }
+  .logoCardsMobileView {
+    /* display: none; */
+  }
+}
+/* Surface Duo */
+@media screen and (min-width: 540px) {
+  .useCardPara {
+    left: 21%;
+  }
+  .useCardPara2 {
+    left: 21%;
+  }
+  .FlyrCatEvemt {
+    padding-bottom: 3%;
+    padding-top: 18%;
+  }
+  .logoUsePointsCol {
+    margin-top: 2%;
+  }
+  .LogoTopTextCatMob p {
+    font-size: 16px;
+    font-family: "NunitoSans-Regular";
+    display: none;
+  }
+  .LogoTopTextCat {
+    margin-top: 14% !important;
+  }
+  .LogoPagination ul li {
+    padding-top: 8px;
+  }
+  .logoUsePoints {
+    /* padding-top: 5%; */
+    padding-bottom: 3%;
+    background: none;
+  }
+  .logoCategoryCardMob {
+    /* width: 16%; */
+    height: auto;
+    background-color: white;
+    border-radius: 6%;
+    position: relative;
+    display: block;
+  }
+  .logoCatCardImg1 {
+    padding-top: 0%;
+  }
+
+  .logoCatCardFirst {
+    margin-top: -10%;
+  }
+  .logoCatCardImg2 {
+    margin-top: -10%;
+    padding-bottom: 0%;
+  }
+  .logoCatCardFooter img {
+    width: 4%;
+  }
+  .FlyrTopImg2 {
+    margin-top: 14%;
+  }
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .logoCategoriesList {
+    height: 150px;
+    width: 150px;
+  }
+
+  /* .logoCategoriesContainer {
+    width: 25%;
+  }
+  .logoCategoriesContainer p {
+    margin-left: -7%;
+  } */
+  .FlyrTopImg {
+    margin-top: 20%;
+  }
+  .FlyrMakerImg {
+    width: 100%;
+    padding-top: 10%;
+  }
+  .useCardPara {
+    position: absolute;
+    /* width: 80%; */
+    /* left: 30%; */
+    font-size: 15px;
+  }
+  .useCardPara2 {
+    /* left: 30%; */
+  }
+  .FlyerCardFirst {
+    /* width: 28rem; */
+    height: 130px;
+    box-shadow: 0px 9px 20px #eee;
+    border: #f5f5f5;
+  }
+  .FlyerCardRest {
+    /* width: 28rem; */
+    border: none;
+    height: 130px;
+    background: transparent;
+  }
+  .FlyrSearchBottom {
+    padding-top: 4%;
+  }
+  .FlyrTopOverlap {
+    margin-top: -2.8em;
+  }
+  .FlyrCatEvemt {
+    padding-bottom: 3%;
+    padding-top: 10%;
+  }
+  .LogoTopTextCat {
+    margin-top: 6% !important;
+  }
+  .LogoPagination ul li {
+    padding-top: 6px;
+  }
+
+  .logoUsePoints {
+    /* padding-top: 5%; */
+    padding-bottom: 3%;
+    background: none;
+  }
+  .logoCatCardFooter img {
+    width: 8%;
+  }
+  .logoCatCardImg1 {
+    padding-top: 5%;
+  }
+
+  .logoCatCardFirst {
+    margin-top: -22%;
+  }
+  .logoCatCardImg2 {
+    margin-top: -18%;
+    padding-bottom: 28%;
+  }
+  .LogoCatTopText {
+    margin-top: 18%;
+  }
+  .FlyrTopText {
+    margin-top: 15%;
+  }
+  .FlyrTopTextCat {
+    margin-bottom: 8%;
+  }
+  .FlyrTopTextCat h1 {
+    margin-top: 10%;
+  }
+  .FlyrTopImg2 {
+    margin-top: 10%;
+  }
+}
+
+/* laptop */
+@media screen and (min-width: 1024px) {
+  .logoCategoriesList {
+    height: 160px;
+    width: 160px;
+    margin-left: 28px;
+  }
+  .FlyrTopImg {
+    margin-top: 15%;
+  }
+  .FlyrMakerImg {
+    width: 130%;
+  }
+  .FlyrLastCardSec {
+    margin-top: 8%;
+    padding-left: 4%;
+  }
+  .useCardPara {
+    left: 26%;
+    width: 70%;
+    font-size: 14px;
+    font-family: "Montserrat-Medium" !important;
+    top: 20%;
+  }
+  .useCardPara2 {
+    left: 26%;
+    width: 70%;
+    font-size: 14px;
+    font-family: "Montserrat-Medium" !important;
+  }
+  .FlyerCardFirst {
+    height: 130px;
+  }
+  .FlyerCardRest {
+    height: 130px;
+  }
+  .useCard {
+    top: 30%;
+  }
+  .logoCardsMobileView {
+    /* display: none; */
+  }
+  .LogoTopTextCat {
+    margin-top: 4% !important;
+  }
+  .LogoPagination ul li {
+    padding-top: 6px;
+  }
+  .logoUseImg {
+    width: 80%;
+  }
+  .logoUsePoints {
+    /* padding-top: 5%; */
+    padding-bottom: 3%;
+    background: url(/static/icons/logo/line.svg) no-repeat center;
+    background-position: left 120px bottom 90px;
+    background-size: 65% 90%;
+  }
+  .logoCatCardFooter {
+    margin-left: 16px;
+    margin-top: -10px;
+  }
+  .LogoCatTopText {
+    margin-top: 14%;
+  }
+  .FlyrTopTextCat {
+    margin-bottom: 0%;
+  }
+  .FlyrTopImg2 {
+    margin-top: 4%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .LogoCatTopText {
+    margin-top: 10%;
+  }
+  .FlyrTopImg {
+    margin-top: 6%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logoCatCardFooter {
+    margin-left: 80px;
+    margin-top: -70px;
+  }
+}
+/* laptopL */
+@media screen and (min-width: 1440px) {
+  .FlyrTopImg {
+    margin-top: 5%;
+  }
+  .LogoTopTextCatMob p {
+    font-size: 16px;
+    font-family: "NunitoSans-Regular";
+    display: none;
+  }
+}
+/* desktop */
+@media screen and (min-width: 2560px) {
+  .FlyrTopImg {
+    margin-top: 7%;
+  }
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: local("Montserrat-Medium"),
+    url(/fonts/Montserrat-Medium.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: local("Montserrat-Regular"),
+    url(/fonts/Montserrat-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Milliard-Bold";
+  src: local("Milliard-Bold"), url(/fonts/Milliard-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "Milliard-Book";
+  src: local("Milliard-Book"), url(/fonts/Milliard-Book.otf) format("opentype");
+}
+@font-face {
+  font-family: "Milliard-SemiBold";
+  src: local("Milliard-SemiBold"),
+    url(/fonts/Milliard-SemiBold.otf) format("opentype");
+}
+@font-face {
+  font-family: "NunitoSans-Regular";
+  src: local("NunitoSans-Regular"),
+    url(/fonts/logocategory/NunitoSans-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NunitoSans-Bold";
+  src: local("NunitoSans-Bold"),
+    url(/fonts/logocategory/NunitoSans-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "NunitoSans-ExtraBold";
+  src: local("NunitoSans-ExtraBold"),
+    url(/fonts/logocategory/NunitoSans-ExtraBold.ttf) format("truetype");
+}

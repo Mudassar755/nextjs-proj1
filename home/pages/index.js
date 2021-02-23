@@ -16,6 +16,11 @@ export default function Home() {
         <Link href="/about">
           <a>About us</a>
         </Link>
+        </div>
+        <div>
+        <Link href="/logo-ideas">
+          <a>Loago Maker</a>
+        </Link>
       </div>
       <Image
         src="/static/nextjs.png"

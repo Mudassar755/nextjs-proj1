@@ -5,7 +5,7 @@ module.exports = {
     return [
       {
         source: '/blog',
-        destination: `${BLOG_URL}/blog`,
+        destination: `${BLOG_URL}/logo-maker/dashboard`,
       },
       {
         source: '/blog/:path*',
